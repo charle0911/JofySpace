@@ -1,0 +1,187 @@
+#project {
+    color: black;
+    font-family: Neou-Bold;
+    font-size: 20px;
+}
+
+.project-cover .cover-rollover {
+display: none; 
+}
+.project-cover:hover .cover-normal.has-rollover,
+.project-cover.touch-hover .cover-normal.has-rollover {
+display: none; 
+}
+.project-cover:hover .cover-rollover,
+.project-cover.touch-hover .cover-rollover {
+display: block; 
+}
+
+.project-covers {
+    padding-top: 10px;
+    margin-right: 0%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.project-cover:nth-child(2n+1) {
+    clear: left;
+    margin-left: 0;
+}
+
+.project-cover:nth-child(2n) {
+    margin-right: 0;
+}
+
+.project-cover {
+    margin-right: 0%;
+    width: 50%;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.project-cover .cover-content-container {
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    position: relative;
+    border: 1px solid white;
+}
+
+.project-cover .cover-image-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.project-cover.hold-space .cover-image:before {
+    padding-bottom: 100%;
+}
+
+.project-cover .cover-image:before {
+    content: '';
+    display: block;
+    width: 100%;
+}
+
+.project-cover .cover-image {
+    position: relative;
+    display: bolock;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.project-cover .cover-image:after {
+    -webkit-transition: background-color 0.2s ease, opacity 0.2s ease;
+    -moz-transition: background-color 0.2s ease, opacity 0.2s ease;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.project-cover.hold-space .cover {
+    left: 0; 
+    display: block;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-cover:hover .details-wrap,
+.project-cover.touch-hover .details-wrap {
+  opacity: 1; }
+
+.project-cover .details-wrap {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding-bottom: 5%;
+    max-width: 100%;
+    padding-top: 5%;
+    width: 90%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 1.15s ease;
+}
+
+.project-cover .details {
+    border-radius: 0px;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.project-cover .details {
+    transition: background 0.2s ease;
+}
+
+.project-cover .details-inner {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    overflow: hidden;
+}
+
+.project-cover .date {
+    color: #999999;
+    float: none;
+    font-family: 微軟正黑體;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 20px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    text-align: center;
+    text-transform: none;
+    width: 90%;
+}
+
+.project-cover .title {
+    color: #222222;
+    float: none;
+    font-family: 微軟正黑體;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 50px;
+    margin: auto;
+    padding-bottom: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+
+

@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Amethyst;
+  src: url(../fonts/Neou-Bold.ttf);
+}
+@font-face {
+  font-family: Neou-Bold;
+  src: url(../fonts/Neou-Bold.ttf);
+}
+@font-face {
+  font-family: Neou-Thin;
+  src: url(../fonts/Neou-Thin.ttf);
+}
+@font-face {
+  font-family: 鐵線龍門;
+  src: url(../fonts/華康鐵線龍門W3.ttf);
+}
+
+body {
+  font-family: "鐵線龍門";
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+span, p, div{
+    cursor: default; 
+}
+.site-wrap, .site-container {
+    position: relative;
+    width: 100%;
+}
+
+.site-container {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-content {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+
+.site-header {
+  position: relative;
+  display: block;
+}
+
+.logo-wrap {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 80%;
+}
+
+.logo {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+
+.logo-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.logo-img {
+    width: 100%;
+} 
+
+@media all and (min-width: 980px) {
+  .sidebar-content {
+      position: fixed;
+      top : 0%;
+      left: 0%;
+      width: 15%; 
+      height : 100%;
+      z-index: 5000;
+      background:  #f6f6f6 url("img/noise.jpg");
+      border-right: 1px solid #D2D3D3;
+  }
+
+  main {
+    position: relative;
+    margin-left: 15%; 
+    width: 85%;
+    height: 100%;
+  }
+
+  .mobile-header-content {
+      display: none;
+  }
+  
+  .social-wrap {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 60%;
+      width: 80%;
+      position: absolute;
+  }
+}
+
+@media all and (max-width: 979px) {
+  .sidebar-content {
+      position: fixed;
+      top : 0%;
+      left: 0%;
+      width: 100%; 
+      height : 100%;
+      z-index: 5000;
+      background:  #f6f6f6 url("img/noise.jpg");
+      border-right: 1px solid #D2D3D3;
+      display: none;
+  }
+
+  main {
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-header-content {
+      border-bottom: 1px solid #D2D3D3;
+      background:  #f6f6f6 url("img/noise.jpg");
+      position: fixed;
+      top : 0%;
+      left: 0%;
+      width: 100%;
+      margin: 0;
+      z-index: 5000;
+      margin-bottom: 10px;s
+  }
+
+  .mobile-text {
+      font-family: Neou-Thin;
+      position: relative;
+      display: block;
+      text-align: left;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      margin-left: 15px;
+  }
+
+  .list-box {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 15px;
+  }
+
+  .mobile-list-img {
+      width: 30px;
+  }
+
+  .logo-text {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+
+  .social-wrap {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      position: absolute;
+  }
+}
+
+nav {
+  height: 100%;
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  width: 80%;
+}
+
+nav .group {
+  padding-bottom: 30px;
+  padding-top: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+nav .group li {
+  padding-bottom: 20px;
+  padding-top: 0px;
+  text-align: center;
+  list-style-type: none;
+}
+
+nav .group li a {
+  font-family: Neou-Thin;
+  color: #999;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+
+
+.nav-social {
+  text-align: center;
+}
+
+
+footer {
+  background: rgba(37, 38, 42, 0.94);
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  left: 0;
+  padding: 0 20px 0 0;
+  position: fixed;
+  width: 100%;
+  z-index: 5000;
+}
+
+
+.iconUl {
+  margin: 0;
+  padding: 0;
+}
+
+.iconUl li {
+  list-style-type: none;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+
+}
+
+.iconUl li img {
+    width : 30px;
+    height : 30px;
+    /*margin-right: auto;
+    margin-left: auto;*/
+}
+
+a {
+    text-decoration: none;;
+}

@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Amethyst;
+  src: url(../fonts/Neou-Bold.ttf);
+}
+@font-face {
+  font-family: Neou-Bold;
+  src: url(../fonts/Neou-Bold.ttf);
+}
+@font-face {
+  font-family: Neou-Thin;
+  src: url(../fonts/Neou-Thin.ttf);
+}
+@font-face {
+  font-family: 鐵線龍門;
+  src: url(../fonts/華康鐵線龍門W3.ttf);
+}
+
+a {
+    text-decoration: none;;
+}
+
+body {
+    position: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    height: 100%; 
+}
+
+.video #index-video {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    /*opacity : 0.5;*/
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-color: black;
+    transition: 1s opacity;
+}
+
+.component-color {
+    opacity : 0.4;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: fixed; 
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -50;
+    background-color: black;
+}
+
+#content h1 {
+  font-size:        24px;
+  text-transform:   uppercase;
+  margin-top:       0;
+  letter-spacing:   4px;
+}
+
+@media all and (min-width: 980px) {
+  .container #content {
+    font-family:  "鐵線龍門";
+    font-weight:  70; 
+    text-align:   center;
+    background:   rgba(0,0,0,0.3);
+    color:        white;
+    padding:      30px;
+    margin:       10% 5%;
+    width:        300px;
+    min-width:    300px;
+    font-size:    18px;
+    position:     fixed;
+  }
+}
+
+@media all and (max-width: 979px) {
+  .container #content {
+    font-family:  "鐵線龍門";
+    font-weight:  70; 
+    text-align:   center;
+    background:   rgba(0,0,0,0.3);
+    color:        white;
+    padding:      30px 0px 10px 10px;
+    width:        300px;
+    min-width:    300px;
+    margin:       20% auto auto auto;
+    font-size:    18px;
+  }
+}
+
+#content button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#content button:hover { 
+   background: rgba(0,0,0,0.5);
+}
