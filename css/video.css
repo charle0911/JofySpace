@@ -122,3 +122,22 @@ body {
 #content button:hover { 
    background: rgba(0,0,0,0.5);
 }
+
+.sound-button {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  z-index: 999;
+  border-radius:99em;
+  background-color:white;
+  opacity: 0.3;
+}
+
+.sound-button img {
+  right: 5%;
+  bottom: 5%;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  opacity: 1;
+}

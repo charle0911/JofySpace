@@ -31,8 +31,11 @@ $(document).ready(function(){
         '<div class = "cover-image"   style = "background-image : url(\'' + activeList[active].img + '\');"></div>' +
         '</div>' +
         '<div class = "details-wrap"><div class = "details-inner">' + 
-            '<div class = "title">' + activeList[active].title + '</div>' +
-            '<div class = "date">' + activeList[active].date + '</div>' + 
+            '<div class = "first-show">' + 
+                '<div class = "title">' + activeList[active].title + '</div>' +
+                '<div class = "date">' + activeList[active].date + '</div>' + 
+            '</div>' + 
+            '<div class = "content">' + activeList[active].content + '</div>' + 
         '</div></div></a>';
     }
     

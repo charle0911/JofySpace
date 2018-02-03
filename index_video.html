@@ -3,7 +3,10 @@
     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/video.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
         <script src="js/jquery.js"></script>
+        <script src="js/video.js"></script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <div class = "container">
@@ -16,10 +19,17 @@
                 <a ><button>COMING SOON</button></a>
             </div>
             <div class="component video">
-                <video id="index-video" class="index-video" src="video/IMG_5417.mp4" autoplay = "true" playsinline autoplay muted loop></video>
+                <video id="index-video" class="index-video"  autoplay loop muted>
+                    <source src="video/IMG_5417.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="component-color">
             </div>
+            <div class = "sound-button">
+                <img class = "sound-button-img" src = "img/speaker_no.png" />
+            </div>
         </div>
+        <footer>
+        </footer>
     </body>
 </html>
